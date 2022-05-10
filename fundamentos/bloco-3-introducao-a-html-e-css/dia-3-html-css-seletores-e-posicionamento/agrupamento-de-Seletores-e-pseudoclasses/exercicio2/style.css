@@ -1,0 +1,32 @@
+div:hover {
+    border: solid 2px black;
+}
+
+div:nth-of-type(1) {
+    background-color: red;
+    font-style: italic;
+}
+
+div:nth-of-type(2) {
+    background-color: blueviolet;
+}
+
+div:nth-of-type(3) {
+    background-color: #00ff00;
+    font-style: italic;
+    height: 80px;
+}
+
+div:nth-of-type(4) {
+    background-color: black;
+    color: white;
+}
+
+div:nth-of-type(5) {
+    background-color: aquamarine;
+    font-style: italic;
+}
+
+h3 {
+    font-family: Helvetica, sans-serif;
+}
