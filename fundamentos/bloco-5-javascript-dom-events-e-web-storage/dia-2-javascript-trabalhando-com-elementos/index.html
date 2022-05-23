@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body id="corpo">
+
+
+
+
+    <script>
+        // nomeia tag <body> como container
+        let container = document.querySelector('#corpo')
+
+        // 1 - Adiciona <h1> no <body> que se chama container
+        let texto = document.createElement('h1')
+        texto.innerText = 'Exercício 5.2 - JavaScript DOM'
+        container.appendChild(texto)
+        
+        // 2 - Adiciona tag <main> na tag <body> que se chama container
+        let tagMain = document.createElement('main')
+        tagMain.className = 'main-content'
+        container.appendChild(tagMain)
+
+        // 3 - Adicioná tag <section> na tad <main> que se chama tagMain
+        let tagSection1 = document.createElement('section')
+        tagSection1.className = 'center-content'
+        tagMain.appendChild(tagSection1)
+
+        // 4 - Adicioná tag <p> na tag <section> que se chama tagSection1
+        let tagP = document.createElement('p')
+        tagP.innerText = 'Realizando exercício número 4'
+        tagSection1.appendChild(tagP)
+
+        // 5 - Adicioná tag <section> na tad <main> que se chama tagMain
+        let tagSection2 = document.createElement('section')
+        tagSection2.className = 'left-content'
+        tagMain.appendChild(tagSection2)
+
+        // 6 - Adicioná tag <section> na tad <main> que se chama tagMain
+        let tagSection3 = document.createElement('section')
+        tagSection3.className = 'right-content'
+        tagMain.appendChild(tagSection3)
+
+        // 7 - Adiciona tag <img> na tag <section> que se chama left-content
+        let tagImg = document.createElement('img')
+        tagImg.className = 'small-image'
+        tagImg.src = 'https://picsum.photos/200'
+        tagSection2.appendChild(tagImg)
+
+        // 8 - Adiciona tag <ul> na tag <section> que se chama right-content
+        let tagList = document.createElement('ul')
+        tagSection3.appendChild(tagList)
+        let numero = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
+        for (index = 0; index < numero.length; index += 1){
+            let texto = numero[index]
+            let tagText = document.createElement('li')
+            tagText.innerText = texto
+            tagList.appendChild(tagText)
+        }
+
+        // 9 - Adiciona 3 tags <h1> no <body> que se chama container
+        let texto2 = document.createElement('h1')
+        let texto3 = document.createElement('h1')
+        let texto4 = document.createElement('h1')
+        texto2.innerText = 'Ola tudo bom?'
+        texto3.innerText = 'Tudo sim e com você'
+        texto4.innerText = 'Ótimo então'
+        container.appendChild(texto2)
+        container.appendChild(texto3)
+        container.appendChild(texto4)
+
+        // Adiciona classe na primeira tag h1
+        let primeiroH1 = document.getElementsByTagName('h1')[0]
+        primeiroH1.className = 'title'
+
+        // Adiciona classe nas 3 tags h1
+        
+
+    </script>
+  </body>
+</html>
