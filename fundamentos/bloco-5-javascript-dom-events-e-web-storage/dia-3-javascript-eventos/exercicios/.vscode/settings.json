@@ -3,5 +3,6 @@
         "botao",
         "friday",
         "fridays"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }

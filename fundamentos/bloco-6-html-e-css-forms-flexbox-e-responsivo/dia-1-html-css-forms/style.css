@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+
+header {
+    margin:10px 0px 10px 30px;
+    }
+
+#nomeEmail {
+    margin-left: 30px;
+}
+
+#nomeEmail input{
+    margin: 2px
+}
+
+
+#nomeEmail input[type="text"]{
+    margin-left: 7px;
+}
+
+#opcoes {
+    margin: 10px 0px 10px 30px;
+}
+
+#opcoes input{
+    margin: 3px;
+}
+
+#caixa-texto textarea{
+    display: block;
+    resize: none;
+    width: 300px;
+    height: 200px;
+    margin-top: 5px;
+}
+
+#caixa-texto {
+    margin: 10px 0px 10px 30px;
+}
+
+#final {
+    margin: 10px 0px 10px 30px;
+}
+
+#border {
+    border: solid 1px black;
+    width: 500px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+#button {
+    margin: 10px 0px 10px 30px;
+}
+
+.button {
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    margin-left: 5px;
+    border-radius: 10px;
+}
