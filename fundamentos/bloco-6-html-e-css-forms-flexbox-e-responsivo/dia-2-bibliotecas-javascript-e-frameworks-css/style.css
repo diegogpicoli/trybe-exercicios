@@ -1,0 +1,12 @@
+body {
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+.container {
+    margin-bottom: 10px;
+}
+
+#caixaTexto {
+    resize: none;
+    height: 160px;
+}
